@@ -349,29 +349,30 @@ const server = http.createServer((req, res) => {
 
 let currentPort = Number(PORT);
 
-server.once('listening', () => {
-  const addr = server.address();
-  const actualPort = typeof addr === 'object' && addr ? addr.port : currentPort;
-  console.log(`====================================================`);
-  console.log(`🚀 Next Label Portfolio Server running on: http://localhost:${actualPort}`);
-  console.log(`🌊 Concept: 「深海にも四季がある」 (Even the deep sea has four seasons)`);
-  console.log(`🛡️  Zero-Trust Security & Range Streaming Enabled`);
-  console.log(`====================================================`);
-});
+if (!process.env.VERCEL) {
+  server.once('listening', () => {
+    const addr = server.address();
+    const actualPort = typeof addr === 'object' && addr ? addr.port : currentPort;
+    console.log(`====================================================`);
+    console.log(`🚀 Next Label Portfolio Server running on: http://localhost:${actualPort}`);
+    console.log(`🛡️  Zero-Trust Security & Range Streaming Enabled`);
+    console.log(`====================================================`);
+  });
 
-server.on('error', (err) => {
-  if (err.code === 'EADDRINUSE') {
-    const nextPort = currentPort + 1;
-    console.warn(`[PORT CONFLICT] Port ${currentPort} in use, trying http://localhost:${nextPort}...`);
-    currentPort = nextPort;
-    setTimeout(() => {
-      server.listen(currentPort);
-    }, 100);
-  } else {
-    console.error('Server error:', err);
-  }
-});
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      const nextPort = currentPort + 1;
+      console.warn(`[PORT CONFLICT] Port ${currentPort} in use, trying http://localhost:${nextPort}...`);
+      currentPort = nextPort;
+      setTimeout(() => {
+        server.listen(currentPort);
+      }, 100);
+    } else {
+      console.error('Server error:', err);
+    }
+  });
 
-server.listen(currentPort);
+  server.listen(currentPort);
+}
 
 export default server;
