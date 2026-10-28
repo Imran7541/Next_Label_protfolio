@@ -166,13 +166,31 @@
     2. **Step 2 (Language):** Upon clicking either sound option, the sound buttons smoothly animate out (`opacity: 0, translateY(-6px)`), and the language choice buttons fade in with slide-up animation (`opacity: 1, translateY(0)`) offering `[ English (EN) ]` and `[ বাংলা (BN) ]`.
     3. **Step 3 (Dissolve):** Upon clicking the preferred language, `window.setPortfolioLanguage()` activates the selected language instantly, the promise resolves, and `z_.finish()` dissolves the loader smoothly into the 3D deep-sea interactive portfolio.
   - Verified with live Headless Chrome Chrome DevTools Protocol (CDP) automated test (`scripts/verify_intro_flow.mjs`) confirming sound choice -> language choice -> language applied -> loader dissolve transition.
-  - All 18/18 automated server and extraction tests pass (`npm test`).
+- [x] Complete Mobile Responsiveness Engine Overhaul across all Viewports & Sections:
+  - Eliminated bottom controls collision on mobile (`<= 760px`):
+    - Positioned `.sound` and `.motion-toggle` cleanly on the bottom-left.
+    - Re-engineered `.hud` seasons rail on mobile: hides inactive seasons and presents only the active season in a luminous, glowing glassmorphic pill badge (`• SPRING`, `• SUMMER`, `• AUTUMN`, `• WINTER` / `• বসন্ত`, etc.), freeing over 140px of horizontal space and completely eliminating collisions with sound/motion controls.
+  - Restored Imran Hossain's Studio Portrait on mobile:
+    - Removed `.about__portrait { display: none; }`.
+    - Styled portrait as a sleek, modern rounded card (`border-radius: 12px`, glowing cyan border, shadow) positioned above the bio text.
+  - Scaled mobile typography & touch targets:
+    - Tagline scaled with `clamp(30px, 8.6vw, 46px)` preventing awkward multi-line text wrapping on small viewports.
+    - Services 01–08: Compact layout with `max-height` and touch-friendly vertical scrolling (`touch-action: pan-y`) so all 8 services are readable without clipping.
+    - Works 01–08: Modern horizontal scrollable touch pills with comfortable tap targets and active glowing state.
+    - Contact Form: 16px inputs (iOS Safari auto-zoom safe), stacked layout, comfortable tap targets.
+    - Two-step loader entrance: Stacked vertical pills on `<= 480px` for easy thumb reach.
+    - Bilingual Bengali typography: Scaled font size and line height so complex Bengali ligatures render smoothly without overflow.
+  - Verified across mobile viewports (390x844, 360x740) in English and Bengali using Headless Chrome CDP automation (`scripts/capture_mobile_pages.mjs`, `scripts/capture_mobile_bn.mjs`).
+  - Automated test suite 18/18 passing (`npm test`).
 
 ---
 
 ## 3. Verified Ready-to-Run State
 - Daemon Server Status: **RUNNING** on `http://localhost:3002` (Background Task: `task-1846`)
 - Start server manually if stopped: `PORT=3002 node server.js` or `npm start`
-- Run automated test suite: `npm test` or `python3 -m unittest discover tests` (18/18 passing)
+- Run automated test suite: `no_proxy=localhost,127.0.0.1 npm test` (18/18 passing)
+- Live Production URL: [https://next-label-portfolio.vercel.app](https://next-label-portfolio.vercel.app)
+- Continuous Deployment: Pushing to `origin main` on GitHub (`Imran7541/Next_Label_protfolio`) automatically triggers a fresh production build and zero-downtime deployment on Vercel.
+
 
 

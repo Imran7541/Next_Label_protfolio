@@ -16,3 +16,347 @@ html[lang="bn"] .body{font-family:'Hind Siliguri','Kalpurush','SolaimanLipi','No
   .lang-btn{padding:2px 5px;font-size:10px}
 }
 
+/* ==========================================================================
+   ENHANCED MOBILE RESPONSIVE ENGINE (Screen Width <= 760px / Mobile & Tablet)
+   ========================================================================== */
+@media (max-width: 760px), (aspect-ratio <= 9/10) {
+  :root {
+    --top: max(72px, calc(env(safe-area-inset-top) + 48px));
+    --bottom: max(22px, env(safe-area-inset-bottom));
+    --margin: clamp(16px, 4.5vw, 22px);
+    --lane: 0px;
+  }
+
+  /* 1. Header & Navigation */
+  .masthead {
+    padding: max(14px, env(safe-area-inset-top)) var(--margin) 8px !important;
+    gap: clamp(8px, 2.5vw, 16px) !important;
+  }
+  .masthead__name {
+    font-size: clamp(11.5px, 3.6vw, 14px) !important;
+    letter-spacing: 0.14em !important;
+    margin-right: auto !important;
+  }
+  .masthead__nav {
+    gap: clamp(8px, 2.5vw, 16px) !important;
+  }
+  .masthead__nav a {
+    font-size: clamp(10px, 2.7vw, 11.5px) !important;
+    letter-spacing: 0.05em !important;
+    padding: 4px 2px !important;
+  }
+
+  /* 2. Bottom Controls Bar: Eliminate Collisions Between Sound, Motion & HUD */
+  .sound {
+    position: fixed !important;
+    bottom: var(--bottom) !important;
+    left: var(--margin) !important;
+    z-index: 35 !important;
+    margin: 0 !important;
+    height: 28px !important;
+    font-size: 10px !important;
+    letter-spacing: 0.06em !important;
+  }
+  .motion-toggle {
+    position: fixed !important;
+    bottom: var(--bottom) !important;
+    left: calc(var(--margin) + 74px) !important;
+    z-index: 35 !important;
+    margin: 0 !important;
+    height: 28px !important;
+    font-size: 10px !important;
+    letter-spacing: 0.06em !important;
+  }
+  .hud {
+    position: fixed !important;
+    top: auto !important;
+    bottom: var(--bottom) !important;
+    right: var(--margin) !important;
+    left: auto !important;
+    transform: none !important;
+    z-index: 35 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    pointer-events: none !important;
+  }
+  .hud__seasons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* On mobile, only display the active season badge so it never overflows or collides */
+  .hud__seasons li {
+    display: none !important;
+  }
+  .hud__seasons li[aria-current] {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    font-size: 10.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: var(--accent) !important;
+    background: rgba(4, 7, 12, 0.72) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    padding: 3px 9px !important;
+    border-radius: 999px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
+  }
+  .hud__seasons li[aria-current]::before {
+    content: "" !important;
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50% !important;
+    background: var(--accent) !important;
+    box-shadow: 0 0 6px var(--accent) !important;
+  }
+  .hud__rail, .hud__depth {
+    display: none !important;
+  }
+
+  /* 3. Panel Common Layout & Scrim Gradient */
+  .panel {
+    padding: var(--top) var(--margin) calc(var(--bottom) + 38px) !important;
+    background: linear-gradient(180deg, rgba(4, 7, 12, 0.05) 0%, rgba(4, 7, 12, 0.7) 48%, rgba(4, 7, 12, 0.95) 100%) !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    overflow: hidden !important;
+  }
+
+  /* 4. Hero Section */
+  .tagline {
+    font-size: clamp(30px, 8.6vw, 46px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.015em !important;
+  }
+  .lede {
+    font-size: clamp(14px, 4vw, 17px) !important;
+    line-height: 1.55 !important;
+  }
+  .body {
+    font-size: clamp(12.5px, 3.4vw, 14px) !important;
+    line-height: 1.7 !important;
+  }
+  .body--hero {
+    max-width: 100% !important;
+    margin-top: 14px !important;
+  }
+
+  /* 5. About Section: Restore Portrait & Responsive Bio */
+  .panel--about {
+    align-items: flex-start !important;
+    justify-content: flex-end !important;
+  }
+  .about__text {
+    width: 100% !important;
+  }
+  .about__portrait {
+    display: block !important;
+    order: -1 !important;
+    width: clamp(74px, 20vw, 92px) !important;
+    height: clamp(90px, 25vw, 112px) !important;
+    aspect-ratio: 4/5 !important;
+    border-radius: 12px !important;
+    margin: 0 0 10px 0 !important;
+    border: 1.5px solid rgba(127, 243, 255, 0.35) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5) !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+  }
+  .about__portrait img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+  }
+  .about__text .lede {
+    margin-bottom: 8px !important;
+  }
+
+  /* 6. Services Section: Compact & Scroll-Safe */
+  .panel--services .lede {
+    margin-bottom: 12px !important;
+  }
+  .services {
+    width: 100% !important;
+    max-height: calc(100dvh - var(--top) - var(--bottom) - 86px) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;
+    overscroll-behavior: contain !important;
+    scrollbar-width: none !important;
+    padding-right: 2px !important;
+  }
+  .services::-webkit-scrollbar {
+    display: none !important;
+  }
+  .service {
+    grid-template-columns: 24px minmax(0, 1fr) !important;
+    gap: 8px !important;
+    padding: 7px 0 6px !important;
+  }
+  .service__no {
+    font-size: 10px !important;
+  }
+  .service__title {
+    font-size: clamp(12.5px, 3.6vw, 14px) !important;
+    line-height: 1.35 !important;
+  }
+  .service__tags {
+    grid-column: 2 !important;
+    text-align: left !important;
+    font-size: clamp(9.5px, 2.7vw, 10.5px) !important;
+    opacity: 0.72 !important;
+    line-height: 1.3 !important;
+    margin-top: 1px !important;
+  }
+
+  /* 7. Works Section: Modern Touch Pills & Clean Card Typography */
+  .panel--works {
+    justify-content: flex-end !important;
+    gap: 10px !important;
+  }
+  .works__nav {
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 4px !important;
+  }
+  .works__list {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-x !important;
+    gap: 6px !important;
+    padding: 2px 0 6px !important;
+    scrollbar-width: none !important;
+  }
+  .works__list::-webkit-scrollbar {
+    display: none !important;
+  }
+  .works__list button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 38px !important;
+    height: 30px !important;
+    padding: 0 10px !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    font-size: 11px !important;
+    color: var(--mist) !important;
+    flex-shrink: 0 !important;
+  }
+  .works__list button[aria-current] {
+    background: var(--accent) !important;
+    color: #04070c !important;
+    font-weight: 700 !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 10px rgba(127, 243, 255, 0.35) !important;
+  }
+  .works__name {
+    font-size: clamp(26px, 7.8vw, 42px) !important;
+    line-height: 1.05 !important;
+  }
+  .works__facts {
+    gap: 12px !important;
+    font-size: 10px !important;
+  }
+  .works__stack {
+    gap: 5px !important;
+    margin: 4px 0 !important;
+  }
+  .works__stack li {
+    font-size: 10px !important;
+    padding: 4px 8px !important;
+    background: rgba(4, 7, 12, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  }
+  .works__links {
+    margin-top: 4px !important;
+    gap: 16px !important;
+  }
+  .works__link {
+    font-size: 12px !important;
+  }
+
+  /* 8. Contact Section: Form Inputs & Spacing */
+  .panel--contact {
+    padding-bottom: calc(var(--bottom) + 38px) !important;
+    justify-content: flex-end !important;
+  }
+  .form {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+    margin-top: 10px !important;
+  }
+  .form input, .form textarea {
+    font-size: 16px !important; /* Prevents auto-zoom in iOS Safari */
+    padding: 5px 0 7px !important;
+  }
+  .form textarea {
+    min-height: 3.2em !important;
+  }
+  .form__actions {
+    margin-top: 4px !important;
+    gap: 10px !important;
+  }
+  .form__actions .pill {
+    padding: 9px 20px !important;
+    font-size: 11.5px !important;
+  }
+
+  /* 9. Loader & Light Dialog on Small Devices */
+  .loader__count {
+    bottom: calc(var(--bottom) + 90px) !important;
+    font-size: 26vw !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .loader__choices {
+    flex-direction: column !important;
+    width: min(280px, 86vw) !important;
+    gap: 8px !important;
+  }
+  .loader__choices .pill {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 12px 18px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* 10. Bengali Typography Mobile Scaling */
+@media (max-width: 760px) {
+  html[lang="bn"] .tagline {
+    font-size: clamp(26px, 7.8vw, 40px) !important;
+    line-height: 1.25 !important;
+  }
+  html[lang="bn"] .lede {
+    font-size: clamp(14px, 3.8vw, 16px) !important;
+    line-height: 1.6 !important;
+  }
+  html[lang="bn"] .body {
+    font-size: clamp(12px, 3.2vw, 13.5px) !important;
+    line-height: 1.75 !important;
+  }
+  html[lang="bn"] .masthead__nav a {
+    font-size: clamp(9.5px, 2.5vw, 11px) !important;
+  }
+}
+
+
