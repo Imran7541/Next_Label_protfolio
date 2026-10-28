@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
     // 2. Anti-bot Timing Heuristic (minimum 3,000ms threshold)
     const elapsed = fill_start_ms ? Date.now() - Number(fill_start_ms) : 99999;
-    if (elapsed < 3000) {
+    if (fill_start_ms && elapsed >= 0 && elapsed < 3000) {
       return res.status(429).json({ errors: { general: 'Please wait a moment before trying again.' } });
     }
 
