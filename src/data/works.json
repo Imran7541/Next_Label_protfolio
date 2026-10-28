@@ -1,0 +1,160 @@
+[
+  {
+    "id": "folio-digital",
+    "name": "FOLIO DIGITAL",
+    "nameJa": null,
+    "href": "#contact",
+    "video": "/videos/work_01.mp4",
+    "poster": "/videos/work_01.jpg",
+    "year": 2026,
+    "role": "UI/UX & Web Design",
+    "summary": "Modern digital product & agency portfolio engineered with human-centered interactions and 3D design systems.",
+    "highlights": [
+      "Interactive 3D design systems",
+      "High-conversion product storytelling layout"
+    ],
+    "stack": [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "verified": true
+  },
+  {
+    "id": "keychrone-3d",
+    "name": "KEYCHRONE 3D",
+    "nameJa": null,
+    "href": "#contact",
+    "video": "/videos/work_02.mp4",
+    "poster": "/videos/work_02.jpg",
+    "preview": {
+      "highlightReduction": 0.16,
+      "edgeGlow": 0.6
+    },
+    "year": 2025,
+    "role": "3D WebGL & Creative Dev",
+    "summary": "Real-time 3D interactive product showcase featuring exploded mechanical switch assembly and precision inspection.",
+    "highlights": [
+      "Real-time 3D exploded assembly simulation",
+      "Smooth scroll-linked component breakdown"
+    ],
+    "stack": [
+      "Three.js",
+      "WebGL",
+      "GLSL",
+      "GSAP"
+    ],
+    "verified": true
+  },
+  {
+    "id": "eirmon-tech",
+    "name": "EIRMON TECH",
+    "nameJa": null,
+    "href": "#contact",
+    "video": "/videos/work_03.mp4",
+    "poster": "/videos/work_03.jpg",
+    "year": 2026,
+    "role": "Brand Identity & Full-Stack",
+    "summary": "Dynamic tech brand platform turning visionary ideas into scalable digital products and AI automation systems.",
+    "highlights": [
+      "Cinematic brand identity & fluid motion",
+      "Scalable product-focused business narrative"
+    ],
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Tailwind CSS"
+    ],
+    "verified": true
+  },
+  {
+    "id": "omni-chat-saas",
+    "name": "OMNI CHAT & SAAS",
+    "nameJa": null,
+    "href": "#contact",
+    "video": "/videos/work_04.mp4",
+    "poster": "/videos/work_04.jpg",
+    "year": 2025,
+    "role": "SaaS Product & Mobile Dev",
+    "summary": "Next-gen glassmorphic cloud messaging and real-time notification platform built for modern collaborative teams.",
+    "highlights": [
+      "Glassmorphic 3D interactive interface",
+      "Real-time multi-channel event notifications"
+    ],
+    "stack": [
+      "Flutter",
+      "Firebase",
+      "WebSocket",
+      "Tailwind CSS"
+    ],
+    "verified": true
+  },
+  {
+    "id": "luz-real",
+    "name": "LUZ REAL",
+    "nameJa": null,
+    "href": "https://luz-real.com/",
+    "video": "/videos/luzreal.mp4",
+    "preview": {
+      "highlightReduction": 0.16,
+      "edgeGlow": 0.6
+    },
+    "year": 2025,
+    "role": "Full-Stack Development",
+    "summary": "Urban architectural real estate web application integrating ambient soundscapes and curated visual spaces.",
+    "highlights": [
+      "Interactive ambient audio experience",
+      "Monochrome typography with spacious layout"
+    ],
+    "stack": [
+      "HTML / CSS",
+      "JavaScript",
+      "Web Audio"
+    ],
+    "verified": false
+  },
+  {
+    "id": "hand",
+    "name": "HAND MODE",
+    "nameJa": "Hand Tracking Interactive Experience",
+    "href": "https://hand.junkbranding.com/",
+    "video": null,
+    "poster": "/videos/hand.jpg",
+    "record": "/videos/hand.mp4",
+    "year": 2026,
+    "role": "Camera API & AI Sensors",
+    "summary": "Computer-vision powered touchless browser navigation using on-device real-time hand tracking and gestures.",
+    "highlights": [
+      "On-device camera gesture navigation",
+      "Touchless spatial interaction in browser"
+    ],
+    "stack": [
+      "Hand tracking",
+      "Camera API",
+      "Web Audio"
+    ],
+    "verified": false
+  },
+  {
+    "id": "funky",
+    "name": "FUNKY WEBGL",
+    "nameJa": "Experimental 3D Web Experience",
+    "href": "https://funky.junkbranding.com/",
+    "video": "/videos/junk.mp4",
+    "year": 2025,
+    "role": "WebGL & Kinetic Typography",
+    "summary": "Experimental 3D typography and kinetic WebGL physics playground exploring unexpected digital interactions.",
+    "highlights": [
+      "3D kinetic letterforms and dynamic physics",
+      "Zero-latency WebGL particle rendering"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "WebGL"
+    ],
+    "verified": false
+  }
+]

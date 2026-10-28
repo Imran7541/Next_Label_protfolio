@@ -1,0 +1,121 @@
+[
+  {
+    "url": "https://www.junkbranding.com/videos/toplace.mp4",
+    "local_path": "src/assets/videos/toplace.mp4",
+    "size_bytes": 372992,
+    "sha256": "8d1e2edd691b631be2384685a7c8d895457df061fc3521d236d138a3c28b1a73",
+    "content_type": "video/mp4"
+  },
+  {
+    "url": "https://www.junkbranding.com/videos/luzreal.mp4",
+    "local_path": "src/assets/videos/luzreal.mp4",
+    "size_bytes": 340605,
+    "sha256": "4388a3ac33622c61aeb024edf3cc1d1815ff63017faf523777f879abf2289f05",
+    "content_type": "video/mp4"
+  },
+  {
+    "url": "https://www.junkbranding.com/videos/junk.mp4",
+    "local_path": "src/assets/videos/junk.mp4",
+    "size_bytes": 722690,
+    "sha256": "4898c49a125d952c5489d720c076323b5ffbbf5e3484bcdf401d02ac05a81ea9",
+    "content_type": "video/mp4"
+  },
+  {
+    "url": "https://www.junkbranding.com/videos/iwakiki.mp4",
+    "local_path": "src/assets/videos/iwakiki.mp4",
+    "size_bytes": 809145,
+    "sha256": "874519bc576536b406af9971264cfe30008dab611e6ba0e090a01d98402c176d",
+    "content_type": "video/mp4"
+  },
+  {
+    "url": "https://www.junkbranding.com/videos/trans.mp4",
+    "local_path": "src/assets/videos/trans.mp4",
+    "size_bytes": 1042498,
+    "sha256": "f423654417c593ae78ce770cf0a44ef94cf39a776fb1db4e12cc4f2fe0f47c40",
+    "content_type": "video/mp4"
+  },
+  {
+    "url": "https://www.junkbranding.com/videos/hand.jpg",
+    "local_path": "src/assets/videos/hand.jpg",
+    "size_bytes": 31052,
+    "sha256": "d08a3bc6f52f59727b5c884f65ef6b13afce604a144c3906a92c55fb84a5d818",
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://www.junkbranding.com/videos/next.mp4",
+    "local_path": "src/assets/videos/next.mp4",
+    "size_bytes": 949327,
+    "sha256": "4b9aa2b0d602179601e98a751af54f36af44ce3c8caff36fe47a67fbd9f2dc06",
+    "content_type": "video/mp4"
+  },
+  {
+    "url": "https://www.junkbranding.com/music/Out%20of%20Flux%20-%20Blue%20Race.mp3",
+    "local_path": "src/assets/music/out_of_flux_blue_race.mp3",
+    "size_bytes": 6368790,
+    "sha256": "4f020cf3a775943350397c97b22e6bdc26ba21e25984a4250476bc3d09c07133",
+    "content_type": "audio/mpeg"
+  },
+  {
+    "url": "https://www.junkbranding.com/images/face.webp",
+    "local_path": "src/assets/images/face.webp",
+    "size_bytes": 80616,
+    "sha256": "416b72bd091451f133c3f6207b727008c44e2b6d87ac82c615ca1832e277f0a0",
+    "content_type": "image/webp"
+  },
+  {
+    "url": "https://www.junkbranding.com/og.jpg",
+    "local_path": "src/assets/branding/og.jpg",
+    "size_bytes": 74394,
+    "sha256": "dd68d687b6916c825b89992e0f747cea912bc0dd3465fe0ebb55e365bdfd2735",
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://www.junkbranding.com/favicon.svg",
+    "local_path": "src/assets/branding/favicon.svg",
+    "size_bytes": 461,
+    "sha256": "927c94c6d93f3a85438d604f77f1980b4fecc8b8dadea7e541d8fd94c29cf72f",
+    "content_type": "image/svg+xml"
+  },
+  {
+    "url": "https://www.junkbranding.com/robots.txt",
+    "local_path": "src/data/robots.txt",
+    "size_bytes": 74,
+    "sha256": "d1257120f9aa95dc4de726b250a9cb2733f95dce5199f714b432751c2aa07f12",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  {
+    "url": "https://www.junkbranding.com/sitemap.xml",
+    "local_path": "src/data/sitemap.xml",
+    "size_bytes": 193,
+    "sha256": "6b991ef5ede926243e949b9b2bd6ba43e7e8f684ee33b69a9e2e03822cc3e3bc",
+    "content_type": "application/xml"
+  },
+  {
+    "url": "https://www.junkbranding.com/assets/index-BG4wa0Rg.js",
+    "local_path": "src/data/bundle_index.js",
+    "size_bytes": 773080,
+    "sha256": "22403b7db5a15a9540cc137b88ff7c7eab53d33c1646b2a3b703e219eae2883a",
+    "content_type": "application/javascript; charset=utf-8"
+  },
+  {
+    "url": "https://www.junkbranding.com/assets/SecretEarthPage-DeCha5-M.js",
+    "local_path": "src/data/bundle_SecretEarthPage.js",
+    "size_bytes": 9304,
+    "sha256": "505fb811f63402ed4551a54e33a75ecefb52e25283fff3186542797e38ce34a9",
+    "content_type": "application/javascript; charset=utf-8"
+  },
+  {
+    "url": "https://www.junkbranding.com/assets/index-Bc3k1I4L.css",
+    "local_path": "src/data/bundle_index.css",
+    "size_bytes": 21630,
+    "sha256": "e5e592482675c6c51f3456ee9c0c98e55f6bf46790962aa0a8ee0e9826a1a084",
+    "content_type": "text/css; charset=utf-8"
+  },
+  {
+    "url": "https://www.junkbranding.com/",
+    "local_path": "src/data/index.html",
+    "size_bytes": 30085,
+    "sha256": "1f9275a609438bb5245164173e557cf28ea38873b0facf96193ecd73faf0f1ac",
+    "content_type": "text/html; charset=utf-8"
+  }
+]
