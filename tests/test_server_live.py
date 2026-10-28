@@ -42,7 +42,8 @@ class TestLiveServer(unittest.TestCase):
             self.assertIn("Content-Security-Policy", resp.headers)
             self.assertEqual(resp.headers.get("X-Frame-Options"), "DENY")
             body = resp.read().decode("utf-8")
-            self.assertIn("JUNKBRANDING", body)
+            self.assertIn("Imran Hossain", body)
+            self.assertIn("Next Label", body)
             self.assertIn("data-stage", body)
 
     def test_02_video_range_streaming(self):

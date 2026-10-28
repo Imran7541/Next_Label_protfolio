@@ -195,7 +195,7 @@ CREATE POLICY "Service role exclusive access on audit_logs"
 
 ---
 
-## 4. Initial Seed Data (Verified JUNKBRANDING Showcase)
+## 4. Initial Seed Data (Verified Next Label Showcase)
 
 ```sql
 INSERT INTO public.works (slug, name, name_ja, href, video_url, poster_url, year, role, summary, highlights, stack, order_index)
@@ -273,8 +273,8 @@ VALUES
 (
     'hand',
     'HAND',
-    'JUNKBRANDING Hand Version',
-    'https://hand.junkbranding.com/',
+    'Next Label Hand Version',
+    'https://hand.imranhossain.dev/',
     NULL,
     '/videos/hand.jpg',
     2026,
@@ -287,8 +287,8 @@ VALUES
 (
     'funky',
     'FUNKY',
-    'JUNKBRANDING Funky Version',
-    'https://funky.junkbranding.com/',
+    'Next Label Funky Version',
+    'https://funky.imranhossain.dev/',
     '/videos/junk.mp4',
     NULL,
     2025,

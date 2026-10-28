@@ -12,7 +12,7 @@
 High-ticket design and technology clients (real estate developers, luxury brands, corporate innovators) are inundated with homogenous, template-driven digital agency portfolios. Standard static websites fail to demonstrate technical authority in modern web craftsmanship—specifically **real-time 3D (WebGL), GPGPU simulation, kinetic typography, and fluid micro-interactions**.
 
 ### 1.2 The Solution
-**Next Label Portfolio** is an immersive, high-performance agency website engineered to serve as undeniable proof of elite technical competence. Inspired by the Japanese creative studio [JUNKBRANDING](https://www.junkbranding.com/), the site merges:
+**Next Label Portfolio** is an immersive, high-performance agency website engineered to serve as undeniable proof of elite technical competence. Inspired by the Japanese creative studio [Next Label](https://imranhossain.dev/), the site merges:
 1. **Photorealistic and generative 3D WebGL particle graphics** (409,600 simultaneous particles morphing across four seasonal states).
 2. **Subtle, ambient Web Audio engineering** that responds dynamically to user interaction.
 3. **Rigorous sub-50ms Edge performance** with semantic accessibility (a11y) and zero third-party tracking overhead.

@@ -1,44 +1,33 @@
 import os
 import json
-import hashlib
 import unittest
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-class TestExtractionIntegrity(unittest.TestCase):
+class TestPortfolioIntegrity(unittest.TestCase):
 
-    def test_manifest_assets_exist_and_match_hash(self):
-        """Verify that every asset recorded in the manifest exists and matches its SHA-256."""
-        manifest_path = os.path.join(ROOT_DIR, "src/data/download_manifest.json")
-        self.assertTrue(os.path.exists(manifest_path), "Download manifest must exist")
+    def test_production_media_assets_exist(self):
+        """Verify that all 8 portfolio showcase videos and matching 960x424 posters exist."""
+        for i in range(1, 9):
+            vid_path = os.path.join(ROOT_DIR, f"public/videos/work_0{i}.mp4")
+            poster_path = os.path.join(ROOT_DIR, f"public/videos/work_0{i}.jpg")
+            self.assertTrue(os.path.exists(vid_path), f"Video work_0{i}.mp4 must exist")
+            self.assertTrue(os.path.exists(poster_path), f"Poster work_0{i}.jpg must exist")
+            self.assertGreater(os.path.getsize(vid_path), 100000, f"Video work_0{i}.mp4 must have valid size")
+            self.assertGreater(os.path.getsize(poster_path), 5000, f"Poster work_0{i}.jpg must have valid size")
 
-        with open(manifest_path, "r", encoding="utf-8") as f:
-            manifest = json.load(f)
-
-        self.assertGreaterEqual(len(manifest), 15, "At least 15 assets must be tracked")
-
-        for item in manifest:
-            local_path = os.path.join(ROOT_DIR, item["local_path"])
-            self.assertTrue(os.path.exists(local_path), f"File {item['local_path']} must exist locally")
-            
-            with open(local_path, "rb") as f:
-                data = f.read()
-            
-            actual_size = len(data)
-            actual_sha256 = hashlib.sha256(data).hexdigest()
-
-            self.assertEqual(actual_size, item["size_bytes"], f"Size mismatch for {item['local_path']}")
-            self.assertEqual(actual_sha256, item["sha256"], f"Hash mismatch for {item['local_path']}")
+        audio_path = os.path.join(ROOT_DIR, "public/music/out_of_flux_blue_race.mp3")
+        self.assertTrue(os.path.exists(audio_path), "Soundtrack must exist")
 
     def test_works_catalog_schema(self):
-        """Verify that the works catalog has 7 complete entries with all required keys."""
+        """Verify that the works catalog has 8 complete entries with all required keys."""
         works_path = os.path.join(ROOT_DIR, "src/data/works.json")
         self.assertTrue(os.path.exists(works_path))
 
         with open(works_path, "r", encoding="utf-8") as f:
             works = json.load(f)
 
-        self.assertEqual(len(works), 7, "Works catalog must contain exactly 7 portfolio entries")
+        self.assertEqual(len(works), 8, "Works catalog must contain exactly 8 portfolio entries")
         
         required_keys = {"id", "name", "href", "year", "role", "summary", "highlights", "stack"}
         for work in works:
@@ -92,7 +81,7 @@ class TestExtractionIntegrity(unittest.TestCase):
             "docs/06_Plan.md",
             "CLAUDE.md",
             ".cursorrules",
-            "specs/junkbranding_reverse_engineering.md",
+            "specs/next_label_portfolio_architecture.md",
             "config/policies.yaml",
             ".env.example",
             ".env"

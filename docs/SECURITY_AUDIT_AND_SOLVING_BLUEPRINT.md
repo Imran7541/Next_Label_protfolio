@@ -1,6 +1,6 @@
 # Next Label Portfolio: Security Audit & Bug Solving Blueprint
 **Standard:** Spec-Driven Development (SDD) & Zero-Trust Agentic Engineering Standard  
-**Project:** Next Label Portfolio (Inspired by JUNKBRANDING - 「深海にも四季がある」)  
+**Project:** Next Label Portfolio (Inspired by Next Label - 「深海にも四季がある」)  
 **Date:** October 27, 2026  
 **Auditor / Architect:** Antigravity AI Engineering Harness  
 

@@ -2,11 +2,11 @@
   "site": {
     "title": "Emran Hosen | Software & Product Developer",
     "description": "I build websites, mobile apps, and SaaS products that solve real-world business problems through thoughtful design and AI automation.",
-    "canonical": "https://www.junkbranding.com/",
+    "canonical": "https://imranhossain.dev/",
     "author": "Emran Hosen",
     "themeColor": "#03050a",
     "locale": "en_US",
-    "ogImage": "https://www.junkbranding.com/og.jpg"
+    "ogImage": "https://imranhossain.dev/og.jpg"
   },
   "concept": {
     "theme": "深海にも四季がある (Even the deep sea has four seasons)",
@@ -141,35 +141,35 @@
       "owned_sites": [
         {
           "name": "くらし支援ナビ",
-          "url": "https://fukushi.junkbranding.com/",
+          "url": "https://imranhossain.dev/#works",
           "description": "困りごとと地域から、公的な相談先を探せる案内サイト。"
         },
         {
           "name": "Creative Dev Blog",
-          "url": "https://lab.junkbranding.com/",
+          "url": "https://imranhossain.dev/#services",
           "description": "アニメーションやインタラクションの実装を発信するブログ。"
         },
         {
           "name": "HP制作専門スクール「0→1」",
-          "url": "https://school.junkbranding.com/",
+          "url": "https://imranhossain.dev/#contact",
           "description": "未経験から、ホームページの企画・制作・公開・運用まで学ぶスクール。"
         }
       ],
       "sister_sites": [
         {
-          "name": "JUNKBRANDING Hand Version (HAND)",
-          "url": "https://hand.junkbranding.com/",
+          "name": "Next Label Hand Version (HAND)",
+          "url": "https://imranhossain.dev/#works",
           "tech": "Hand tracking, Camera API, Web Audio"
         },
         {
-          "name": "JUNKBRANDING Funky Version (FUNKY)",
-          "url": "https://funky.junkbranding.com/",
+          "name": "Next Label Funky Version (FUNKY)",
+          "url": "https://imranhossain.dev/#works",
           "tech": "Next.js, React, WebGL"
         }
       ]
     },
     "secret_earth_easter_egg": {
-      "trigger": "Form submission success (junkbranding:reveal-earth)",
+      "trigger": "Form submission success (nextlabel:reveal-earth)",
       "dialogId": "secret-earth",
       "title": "Thank you.",
       "lead": "送信しました。ご相談ありがとうございます。",

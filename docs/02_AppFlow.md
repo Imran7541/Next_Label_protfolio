@@ -50,7 +50,7 @@ stateDiagram-v2
         BotCheck --> PostAPI: Passes Bot Check
     }
 
-    SubmittingInquiry --> SecretEarthModal: API 200 OK (junkbranding:reveal-earth)
+    SubmittingInquiry --> SecretEarthModal: API 200 OK (nextlabel:reveal-earth)
     SubmittingInquiry --> FormErrorNotice: API 4xx/5xx / Network Fail
 
     state SecretEarthModal {
@@ -122,7 +122,7 @@ stateDiagram-v2
   - AbortController terminates requests exceeding 15 seconds.
 
 ### 3.5 Secret Earth Easter Egg Dialog (`[data-secret-earth]`)
-- **Trigger:** Dispatched by custom event `junkbranding:reveal-earth` upon HTTP 200 from `/api/contact`.
+- **Trigger:** Dispatched by custom event `nextlabel:reveal-earth` upon HTTP 200 from `/api/contact`.
 - **State Transition:**
   1. Main stage pauses rendering (`H_.stop()`).
   2. Dialog opens with `aria-modal="true"`.
@@ -136,7 +136,7 @@ stateDiagram-v2
 
 | Failure / Edge Scenario | Detection Trigger | Recovery & Fallback Action |
 | :--- | :--- | :--- |
-| **WebGL Context Lost** | `webglcontextlost` on canvas | Catches event, calls `preventDefault()`, dispatches `junkbranding:gl-lost`, and displays clean CSS gradient backdrop without crashing UI. |
+| **WebGL Context Lost** | `webglcontextlost` on canvas | Catches event, calls `preventDefault()`, dispatches `nextlabel:gl-lost`, and displays clean CSS gradient backdrop without crashing UI. |
 | **Prefers Reduced Motion** | `window.matchMedia('(prefers-reduced-motion: reduce)')` | Disables particle angular velocity, halts screen warp distortion, and replaces kinetic typography translation with instant alpha fades. |
 | **Low-End Mobile Device** | GPU benchmark $< 25\text{fps}$ during warmup | Automatically switches to `tier: 'low'`: decreases particle allocation to $102,400$, scales down render target to $0.75\times$. |
 | **Bot / Rapid Submissions** | Form submit within $< 3000\text{ms}$ or honeypot filled | Silently drops backend dispatch; displays friendly anti-spam notification: *"少し時間をおいてから、もう一度お試しください。"* |

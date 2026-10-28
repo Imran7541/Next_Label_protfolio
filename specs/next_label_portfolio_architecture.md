@@ -1,16 +1,16 @@
-# Spec-Driven Development (SDD): JUNKBRANDING Site Architecture & Reverse-Engineering
+# Spec-Driven Development (SDD): Next Label 3D Portfolio Architecture
 
-This specification serves as the formal architectural contract and behavioral requirements specification for the extracted JUNKBRANDING system.
+This specification serves as the formal architectural contract and behavioral requirements specification for the Next Label Portfolio (Imran Hossain).
 
 ```yaml
 spec_metadata:
-  target_system: "JUNKBRANDING Design Studio"
-  origin_url: "https://www.junkbranding.com"
+  target_system: "Next Label Portfolio"
+  site_url: "https://imranhossain.dev"
   version: "1.0.0"
   status: "COMPLETED"
-  classification: "Reverse-Engineered Reference Architecture"
-  extracted_assets_count: 17
-  extracted_shaders_count: 4
+  classification: "3D Interactive WebGL Portfolio Architecture"
+  assets_count: 17
+  shaders_count: 4
   particle_system_capacity: 409600
 ```
 
@@ -75,7 +75,7 @@ Feature: Contact Form Submission and Bot Mitigation
     And name, email, and message meet character length validation
     When the user submits the form
     Then a POST request is dispatched to "/api/contact"
-    And on HTTP 200 response, the "junkbranding:reveal-earth" event fires
+    And on HTTP 200 response, the "nextlabel:reveal-earth" event fires
     And the Secret Earth 3D dialog opens displaying the confirmation message
 
   Scenario: Automated bot attempts rapid submission
@@ -83,17 +83,17 @@ Feature: Contact Form Submission and Bot Mitigation
     Or the hidden "company_website" field contains text
     When submission is triggered
     Then the submission is aborted without calling the backend
-    And the form displays "少し時間をおいてから、もう一度お試しください。"
+    And the form displays "Please wait a moment before trying again."
 ```
 
 ### 1.4 Portfolio Works Video Playback
-The works section presents 7 selected client and studio projects with interactive preview videos.
+The works section presents 8 selected client and software projects with interactive preview videos.
 
 ```gherkin
 Feature: Portfolio Works Interactive Video Showcase
 
   Scenario: User scrolls through the works carousel
-    Given 7 portfolio projects are registered in the works ledger
+    Given 8 portfolio projects are registered in the works ledger
     When a work panel gains focus or hover
     Then the corresponding MP4 video preview loads and streams
     And the project details, year, role, and technology stack render in the DOM

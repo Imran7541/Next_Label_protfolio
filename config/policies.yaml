@@ -2,7 +2,7 @@
 version: "1.0.0"
 metadata:
   target_project: "Next_Label_protfolio"
-  reverse_engineered_origin: "https://www.junkbranding.com"
+  primary_site_url: "https://imranhossain.dev"
   classification: "Public Showcase & Studio Portfolio"
 
 security:

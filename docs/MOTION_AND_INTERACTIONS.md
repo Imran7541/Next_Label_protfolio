@@ -1,6 +1,6 @@
-# Motion, Interaction & Shader Mechanics: JUNKBRANDING
+# Motion, Interaction & Shader Mechanics: Next Label
 
-This document breaks down the interactive design, kinetic choreography, particle systems, and shader pipelines found on `https://www.junkbranding.com/`.
+This document breaks down the interactive design, kinetic choreography, particle systems, and shader pipelines found on `https://imranhossain.dev/`.
 
 ---
 

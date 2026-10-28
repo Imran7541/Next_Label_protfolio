@@ -1,19 +1,19 @@
-# Data, Copywriting & Content Specification: JUNKBRANDING
+# Data, Copywriting & Content Specification: Next Label
 
-This document records the complete textual content, Japanese copywriting, English translations, and structural data specifications extracted from `https://www.junkbranding.com/`.
+This document records the complete textual content, Japanese copywriting, English translations, and structural data specifications extracted from `https://imranhossain.dev/`.
 
 ---
 
 ## 1. Global Meta & Identity Data
 
-- **Site Title**: `JUNKBRANDING | Mix the unexpected.`
+- **Site Title**: `Next Label | Mix the unexpected.`
 - **Tagline**: `きれいなだけでは終わらない。見た瞬間、触れた瞬間に何かが残る。そんなWebをつくっています。`
 - **Core Concept**: `深海にも四季がある (Even the deep sea has four seasons)`
-- **Author**: `JUNKBRANDING DESIGN STUDIO`
-- **Canonical URL**: `https://www.junkbranding.com/`
+- **Author**: `Next Label DESIGN STUDIO`
+- **Canonical URL**: `https://imranhossain.dev/`
 - **Locale**: `ja_JP`
 - **Theme Color**: `#03050a` (Deep Oceanic Abyss Navy)
-- **Primary Social Image**: `https://www.junkbranding.com/og.jpg`
+- **Primary Social Image**: `https://imranhossain.dev/og.jpg`
 
 ---
 
@@ -31,7 +31,7 @@ This document records the complete textual content, Japanese copywriting, Englis
 ### Panel 02: About (春 - Spring)
 - **Heading**: `深海にも四季がある` (*"Even the deep sea has four seasons"*)
 - **Narrative Copy**:
-  > JUNKBRANDINGは、見えない細部まで設計し、ブランドの体験をかたちにするWebのクリエイティブスタジオです。デザイン、WebGL、SPA、アプリ、CMS構築、SEO、運用まで。
+  > Next Labelは、見えない細部まで設計し、ブランドの体験をかたちにするWebのクリエイティブスタジオです。デザイン、WebGL、SPA、アプリ、CMS構築、SEO、運用まで。
 - **Representative Portrait**: `src/assets/images/face.webp` (Founder & Creative Technologist portrait).
 
 ### Panel 03: Services (夏 - Summer)
@@ -52,8 +52,8 @@ Detailed in `src/data/works.json`:
 3. **NEXT** (2024): Corporate portfolio presenting real economy visuals via nightscape light particles.
 4. **TRANS B** (2025): Logistics platform with real-time 3D nighttime highway drive and kinetic type.
 5. **LUZ REAL** (2024): Real estate platform in Tokyo's central 4 wards with ambient audio immersion.
-6. **JUNKBRANDING Hand Version (HAND)** (2026): In-house experimental portfolio controlled via Camera Hand Tracking.
-7. **JUNKBRANDING Funky Version (FUNKY)** (2025): Alternative brand expression built on Next.js, React, and WebGL.
+6. **Next Label Hand Version (HAND)** (2026): In-house experimental portfolio controlled via Camera Hand Tracking.
+7. **Next Label Funky Version (FUNKY)** (2025): Alternative brand expression built on Next.js, React, and WebGL.
 
 ### Panel 06: Contact (冬 - Winter)
 - **Heading**: `新規制作、リニューアル、運用のご相談をお待ちしています。` (*"We welcome inquiries for new production, website renewals, and ongoing operations."*)
@@ -61,10 +61,10 @@ Detailed in `src/data/works.json`:
 
 ### Panel 07: Finale & Studio Network
 - **Owned Studio Sites**:
-  - **くらし支援ナビ** (`https://fukushi.junkbranding.com/`): Public welfare advisory guide.
-  - **Creative Dev Blog** (`https://lab.junkbranding.com/`): Tech blog exploring animations and WebGL.
-  - **HP制作専門スクール「0→1」** (`https://school.junkbranding.com/`): Creative web engineering academy.
-- **Copyright**: `© 2026 JUNKBRANDING`
+  - **くらし支援ナビ** (`https://fukushi.imranhossain.dev/`): Public welfare advisory guide.
+  - **Creative Dev Blog** (`https://lab.imranhossain.dev/`): Tech blog exploring animations and WebGL.
+  - **HP制作専門スクール「0→1」** (`https://school.imranhossain.dev/`): Creative web engineering academy.
+- **Copyright**: `© 2026 Next Label`
 
 ### Hidden Sector: Secret Earth Easter Egg
 - **Modal Heading**: `Thank you.`

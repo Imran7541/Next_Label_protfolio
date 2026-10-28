@@ -418,5 +418,25 @@
     "ip_hash": "OjpmZmZmOjEyNy4wLjAuMQ==",
     "created_at": "2026-10-28T13:13:59.724Z",
     "status": "pending"
+  },
+  {
+    "id": "inq_1793194463490_gqs7ec",
+    "name": "Kenji Sato",
+    "email": "kenji.sato@example.co.jp",
+    "message": "新規ブランドサイトのWebGLアニメーションとUI実装について相談させてください。",
+    "elapsed_ms": 9200,
+    "ip_hash": "OjpmZmZmOjEyNy4wLjAuMQ==",
+    "created_at": "2026-10-28T13:34:23.490Z",
+    "status": "pending"
+  },
+  {
+    "id": "inq_1793194513852_dobgd2",
+    "name": "Kenji Sato",
+    "email": "kenji.sato@example.co.jp",
+    "message": "新規ブランドサイトのWebGLアニメーションとUI実装について相談させてください。",
+    "elapsed_ms": 9200,
+    "ip_hash": "OjpmZmZmOjEyNy4wLjAuMQ==",
+    "created_at": "2026-10-28T13:35:13.852Z",
+    "status": "pending"
   }
 ]

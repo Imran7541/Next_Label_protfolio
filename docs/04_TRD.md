@@ -64,7 +64,7 @@ Next_Label_protfolio/
 │   └── 06_Plan.md
 │
 ├── specs/                                     # Spec-Driven Development (SDD) source
-│   └── junkbranding_reverse_engineering.md
+│   └── nextlabel_reverse_engineering.md
 │
 ├── notes/                                     # Token-saving live state tracking
 │   ├── PROJECT_STATE.md

@@ -8,7 +8,7 @@ phase: Completed & Verified
 
 - [x] **Task 1: Eradicate Japanese Meta & Text in `index.html`**
   - Set `<html lang="en">` as default.
-  - Sanitized Schema.org JSON-LD to English (`inLanguage: "en"`, Imran Hossain, Bangladesh, preserving `JUNKBRANDING` concept attribution).
+  - Sanitized Schema.org JSON-LD to English (`inLanguage: "en"`, Imran Hossain, Bangladesh, Next Label Studio).
   - Replaced skip-link text: `Skip to contact form`.
   - Replaced loader warnings and buttons with English defaults (`Loading...`, `Try again`, `Lightweight mode`).
   - Total Japanese characters in `index.html`: 0.

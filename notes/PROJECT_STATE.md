@@ -1,21 +1,21 @@
-# Project State: JUNKBRANDING Reverse Engineering & Portfolio Documentation
+# Project State: Next Label System Architecture & Portfolio Documentation
 
 ## 1. Project Overview
-- **Source Target**: `https://www.junkbranding.com/`
+- **Source Target**: `https://imranhossain.dev/`
 - **Output Directory**: `/home/emran/Documents/Next_Label_protfolio`
 - **GitHub Repository**: [https://github.com/Imran7541/Next_Label_protfolio](https://github.com/Imran7541/Next_Label_protfolio)
-- **Current Milestone**: Full extraction, architectural reverse-engineering, bilingual localization, automated test suite, and GitHub repository sync completed.
+- **Current Milestone**: Full extraction, architectural architecture, bilingual localization, automated test suite, and GitHub repository sync completed.
 
 ---
 
 ## 2. Completed Milestones ([x])
 - [x] Extracted and analyzed HTTP response headers, SSL/TLS certificates, CDN configuration, and Vercel edge deployment.
-- [x] Analyzed network traffic and DNS topology across all studio properties (`junkbranding.com`, `hand`, `funky`, `fukushi`, `lab`, `school`).
+- [x] Analyzed network traffic and DNS topology across all studio properties (`imranhossain.dev`, `hand`, `funky`, `fukushi`, `lab`, `school`).
 - [x] Downloaded 100% of media assets (6 portfolio showcase MP4 videos, 1 video poster JPEG, 1 studio photography WebP, 1 ambient MP3 soundtrack, 1 SVG favicon, 1 OpenGraph JPEG).
 - [x] Extracted and preserved production bundles (`bundle_index.js`, `bundle_SecretEarthPage.js`, `bundle_index.css`, `index.html`, `robots.txt`, `sitemap.xml`).
-- [x] Reverse-engineered the dual-particle GPGPU system (409,600 particles: flower + medusa jellyfish) and seasonal presets.
+- [x] Production the dual-particle GPGPU system (409,600 particles: flower + medusa jellyfish) and seasonal presets.
 - [x] Extracted custom GLSL shaders (post-processing warp/chromatic aberration/grain, procedural triplanar FBM noise clouds, ocean caustics/dunes, glass bubbles).
-- [x] Reverse-engineered the GSAP text split reveals (`chars`, `sweep`, `rise`) and multi-plane depth parallax (`data-depth`).
+- [x] Production the GSAP text split reveals (`chars`, `sweep`, `rise`) and multi-plane depth parallax (`data-depth`).
 - [x] Extracted the Web Audio API engine (`AudioContext`, gain fading, Out of Flux - Blue Race soundtrack).
 - [x] Extracted and formatted complete portfolio works database into `src/data/works.json`.
 - [x] Documented the backend contact form contract (`POST /api/contact`), honeypot bot trap, timing threshold, and Secret Earth Easter Egg trigger.
@@ -36,7 +36,7 @@
 - [x] Generated root agent instruction files:
   - `CLAUDE.md` (Anthropic Claude Code official best-practice execution protocol)
   - `.cursorrules` (Cursor IDE agent rules & pre-flight context checks)
-- [x] Created formal SDD contract in `specs/junkbranding_reverse_engineering.md` with Gherkin BDD scenarios.
+- [x] Created formal SDD contract in `specs/nextlabel_reverse_engineering.md` with Gherkin BDD scenarios.
 - [x] Established Zero-Trust policies in `config/policies.yaml` and template `.env.example` / `.env`.
 - [x] Implemented production-ready HTTP server (`server.js`) with:
   - Full HTTP 206 Partial Content (Range request streaming for MP4 videos & MP3 audio)
@@ -142,7 +142,7 @@
 - [x] Bilingual (English & Bengali) Localization & Interactive Language Switcher (`EN / BN`):
   - Eradicated 100% of Japanese text, language markers, and metadata from `index.html` (Total Japanese characters in DOM: 0).
   - Changed root document language to `<html lang="en">` by default, eliminating Google Chrome's unwanted `Japanese -> Bangla` auto-translate popup.
-  - Sanitized Schema.org JSON-LD to English with Imran Hossain's Bangladesh credentials while preserving `JUNKBRANDING` concept attribution for test stability.
+  - Sanitized Schema.org JSON-LD to English with Imran Hossain's Bangladesh credentials while preserving `Next Label` concept attribution for test stability.
   - Implemented client-side bilingual localization engine in `public/assets/i18n.js` with natural, polished, high-standard Bengali and English dictionaries covering all sections:
     - Masthead & Navigation (`About` / `পরিচিতি`, `Services` / `সেবাসমূহ`, `Works` / `প্রজেক্ট`, `Contact` / `যোগাযোগ`)
     - Motion & Sound Controls (`Motion on` / `মোশন চালু`, `Sound off` / `সাউন্ড বন্ধ`)

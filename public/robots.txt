@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.junkbranding.com/sitemap.xml
+Sitemap: https://imranhossain.dev/sitemap.xml

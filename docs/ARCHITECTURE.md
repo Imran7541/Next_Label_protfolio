@@ -1,12 +1,12 @@
-# System Architecture Specification: JUNKBRANDING Design Studio
+# System Architecture Specification: Next Label Design Studio
 
-This document provides a comprehensive reverse-engineered architectural specification of [JUNKBRANDING](https://www.junkbranding.com/).
+This document provides a comprehensive production architectural specification of [Next Label](https://imranhossain.dev/).
 
 ---
 
 ## 1. Executive Summary & Architectural Overview
 
-**JUNKBRANDING** is an ultra-high-end Japanese creative web design studio site embodying the concept:
+**Next Label** is an ultra-high-end Japanese creative web design studio site embodying the concept:
 > **「深海にも四季がある」** (*"Even the deep sea has four seasons"*)  
 > *"Mix the unexpected: Folding a cosmos flower into a deep-sea jellyfish."*
 
@@ -117,7 +117,7 @@ sequenceDiagram
 3. Bot timing trap: `elapsed < minFillMs (3000ms)` or `sentRecently()` locally rejects automated bots.
 4. Payload transmitted via `fetch('/api/contact', { method: 'POST', credentials: 'same-origin' })`.
 5. On success:
-   - Triggers `junkbranding:reveal-earth` custom event.
+   - Triggers `nextlabel:reveal-earth` custom event.
    - Dynamically loads `SecretEarthPage-DeCha5-M.js` (9.3 KB chunk).
    - Renders interactive procedural 3D Earth in low orbit with triplanar cloud FBM noise and atmospheric rim glow.
 

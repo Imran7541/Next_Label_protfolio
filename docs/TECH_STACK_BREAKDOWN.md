@@ -1,6 +1,6 @@
-# Comprehensive Technology Stack Breakdown: JUNKBRANDING
+# Comprehensive Technology Stack Breakdown: Next Label
 
-This document catalogs every single library, framework, engine, protocol, shader, font, and cloud service identified during reverse-engineering of `https://www.junkbranding.com/`.
+This document catalogs every single library, framework, engine, protocol, shader, font, and cloud service identified during architecture of `https://imranhossain.dev/`.
 
 ---
 
@@ -84,5 +84,5 @@ This document catalogs every single library, framework, engine, protocol, shader
 | **NEXT** | Corporate Portfolio | 2024 | `https://next-inc.group/` | HTML/CSS, JavaScript, Canvas |
 | **TRANS B** | Logistics & Transport | 2025 | `https://trans-b.vercel.app/` | Three.js, WebGL, GSAP, Vercel |
 | **LUZ REAL** | Real Estate (Tokyo Central 4 Wards) | 2024 | `https://luz-real.com/` | HTML/CSS, JavaScript, Web Audio API |
-| **HAND** | JUNKBRANDING Experimental | 2026 | `https://hand.junkbranding.com/` | Hand Tracking, Camera API, Web Audio |
-| **FUNKY** | JUNKBRANDING Brand Edition | 2025 | `https://funky.junkbranding.com/` | Next.js, React, WebGL |
+| **HAND** | Next Label Experimental | 2026 | `https://hand.imranhossain.dev/` | Hand Tracking, Camera API, Web Audio |
+| **FUNKY** | Next Label Brand Edition | 2025 | `https://funky.imranhossain.dev/` | Next.js, React, WebGL |

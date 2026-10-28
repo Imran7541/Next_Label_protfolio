@@ -1,7 +1,7 @@
 {
   "name": "next-label-portfolio",
   "version": "1.0.0",
-  "description": "Next Label Portfolio – High-end 3D WebGL agency showcase inspired by JUNKBRANDING (深海にも四季がある)",
+  "description": "Next Label Portfolio – High-End 3D WebGL Interactive Showcase for Imran Hossain | Software & Product Developer",
   "type": "module",
   "main": "server.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "creative-agency",
     "zero-trust"
   ],
-  "author": "Next Label / JUNKBRANDING",
+  "author": "Imran Hossain <imrandt2001@gmail.com>",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=20.0.0"

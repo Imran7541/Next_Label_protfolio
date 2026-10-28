@@ -1,24 +1,24 @@
-# Network, Security & Infrastructure Analysis: JUNKBRANDING
+# Network, Security & Infrastructure Analysis: Next Label
 
-This document presents forensic evidence, network capture analysis, security posture evaluations, and backend endpoint behavior for `https://www.junkbranding.com/`.
+This document presents forensic evidence, network capture analysis, security posture evaluations, and backend endpoint behavior for `https://imranhossain.dev/`.
 
 ---
 
 ## 1. Network Topology & DNS Dissection
 
 ### 1.1 DNS Resolution & Anycast Routing
-Network probes conducted against `junkbranding.com` and all known studio subdomains revealed the following topology:
+Network probes conducted against `imranhossain.dev` and all known studio subdomains revealed the following topology:
 
 | Hostname | Resolved IP Addresses | ASN & Routing Entity | Service Type |
 | :--- | :--- | :--- | :--- |
-| `www.junkbranding.com` | `216.150.1.1`, `216.150.16.1` | AS16509 (Amazon.com / Vercel Edge) | Main Production Studio Site |
-| `hand.junkbranding.com` | `216.150.1.1`, `216.150.16.1` | AS16509 (Amazon.com / Vercel Edge) | Hand-Tracking Studio Version |
-| `funky.junkbranding.com` | `216.150.1.1`, `216.150.16.1` | AS16509 (Amazon.com / Vercel Edge) | Funky WebGL Next.js Studio Version |
-| `fukushi.junkbranding.com` | `216.150.1.193`, `216.150.16.193`| AS16509 (Amazon.com / Vercel Edge) | Kurashi Shien Navi (Public Welfare Nav) |
-| `lab.junkbranding.com` | `216.150.1.193`, `216.150.16.193`| AS16509 (Amazon.com / Vercel Edge) | Creative Dev Engineering Blog |
-| `school.junkbranding.com` | `216.150.1.1`, `216.150.16.1` | AS16509 (Amazon.com / Vercel Edge) | "0→1" Website Production Academy |
+| `imranhossain.dev` | `216.150.1.1`, `216.150.16.1` | AS16509 (Amazon.com / Vercel Edge) | Main Production Studio Site |
+| `hand.imranhossain.dev` | `216.150.1.1`, `216.150.16.1` | AS16509 (Amazon.com / Vercel Edge) | Hand-Tracking Studio Version |
+| `funky.imranhossain.dev` | `216.150.1.1`, `216.150.16.1` | AS16509 (Amazon.com / Vercel Edge) | Funky WebGL Next.js Studio Version |
+| `fukushi.imranhossain.dev` | `216.150.1.193`, `216.150.16.193`| AS16509 (Amazon.com / Vercel Edge) | Kurashi Shien Navi (Public Welfare Nav) |
+| `lab.imranhossain.dev` | `216.150.1.193`, `216.150.16.193`| AS16509 (Amazon.com / Vercel Edge) | Creative Dev Engineering Blog |
+| `school.imranhossain.dev` | `216.150.1.1`, `216.150.16.1` | AS16509 (Amazon.com / Vercel Edge) | "0→1" Website Production Academy |
 
-- **Apex Domain (`junkbranding.com`)**: Does not resolve an A record directly; canonical resolution enforces traffic through `www.junkbranding.com`.
+- **Apex Domain (`imranhossain.dev`)**: Does not resolve an A record directly; canonical resolution enforces traffic through `imranhossain.dev`.
 - **Anycast Edge Network**: Traffic terminates at Vercel's global edge network nodes (e.g., node identifier `bom1::prkd5-1792916612807-7aecc9c38a0d`), ensuring under 50ms latency globally.
 
 ---

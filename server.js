@@ -1,5 +1,5 @@
 /**
- * High-Performance Production & Development Server for Next Label Portfolio (JUNKBRANDING)
+ * High-Performance Production & Development Server for Next Label Portfolio - Imran Hossain
  * Zero external dependencies, native Node.js HTTP/1.1 & HTTP/2 compatible.
  * Supports:
  * - HTTP 206 Partial Content (Range requests) for smooth MP4 & MP3 streaming
