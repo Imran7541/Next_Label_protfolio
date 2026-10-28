@@ -1,0 +1,54 @@
+# Zero-Trust Security Policies & Environment Gating Rules
+version: "1.0.0"
+metadata:
+  target_project: "Next_Label_protfolio"
+  reverse_engineered_origin: "https://www.junkbranding.com"
+  classification: "Public Showcase & Studio Portfolio"
+
+security:
+  content_security_policy:
+    default_src: ["'self'"]
+    script_src: ["'self'"]
+    style_src: ["'self'"]
+    img_src: ["'self'", "data:", "blob:"]
+    media_src: ["'self'", "blob:"]
+    font_src: ["'self'", "data:"]
+    connect_src: ["'self'"]
+    worker_src: ["'self'", "blob:"]
+    object_src: ["'none'"]
+    base_uri: ["'self'"]
+    form_action: ["'self'"]
+    frame_ancestors: ["'none'"]
+    upgrade_insecure_requests: true
+
+  headers:
+    strict_transport_security: "max-age=63072000; includeSubDomains; preload"
+    x_content_type_options: "nosniff"
+    x_frame_options: "DENY"
+    referrer_policy: "strict-origin-when-cross-origin"
+    cross_origin_opener_policy: "same-origin"
+    cross_origin_resource_policy: "same-origin"
+    permissions_policy: "accelerometer=(self), gyroscope=(self), magnetometer=(), camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+form_policies:
+  contact_endpoint: "/api/contact"
+  allowed_methods: ["POST"]
+  content_type: "application/json"
+  honeypot_field: "company_website"
+  min_fill_time_ms: 3000
+  max_fill_time_ms: 3600000
+  rate_limit:
+    window_seconds: 3600
+    max_requests: 5
+    block_duration_seconds: 7200
+
+performance_budget:
+  max_bundle_size_kb: 800
+  max_css_size_kb: 30
+  target_fcp_ms: 1200
+  target_lcp_ms: 2200
+  target_cls: 0.02
+  webgl_tier_fallback:
+    high_tier_particle_count: 409600
+    low_tier_particle_count: 102400
+    reduced_motion: "disable_rotations_and_particles"

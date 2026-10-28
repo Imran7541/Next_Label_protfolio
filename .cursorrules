@@ -1,0 +1,36 @@
+# Cursor IDE Agent Rules & Instructions
+# Project: Next Label Portfolio (Creative Agency & 3D Interactive Showcase)
+
+# ==============================================================================
+# MANDATORY PRE-FLIGHT CHECK
+# ==============================================================================
+# Before writing or modifying any code in this project, you MUST read the
+# 6-Document Context Architecture in the docs/ directory:
+#
+# 1. docs/01_PRD.md        - Product Requirements, User Stories & Out of Scope
+# 2. docs/02_AppFlow.md    - Screen State Machine, Routes & Error Handling
+# 3. docs/03_UI_Spec.md    - Visual Tokens, Exact Hex Colors & Typography Scale
+# 4. docs/04_TRD.md        - Locked Tech Stack, Versions & Folder Architecture
+# 5. docs/05_Schema.md     - Relational Database DDL, Indexes & RLS Policies
+# 6. docs/06_Plan.md       - Atomic, Sequential Implementation Checklist
+# ==============================================================================
+
+# EXECUTION PROTOCOL
+1. Strictly follow the sequential phases in docs/06_Plan.md. Do not skip phases or write speculative features.
+2. Mark completed tasks as [x] in docs/06_Plan.md immediately after verifying them.
+3. Keep notes/PROJECT_STATE.md and notes/AGENT_HANDOVER.md synchronized after each milestone.
+4. Adhere to Zero-Trust Security:
+   - Never hardcode secrets or API keys. Always read from .env.
+   - Always enforce Row-Level Security (RLS) on PostgreSQL / Supabase tables.
+   - Validate and sanitize all API route inputs with Zod. Enforce honeypot and timing heuristics.
+5. Adhere to WebGL & UI Specifications:
+   - Three.js clear color: #020408.
+   - Exact color tokens: --ink (#04070c), --paper (#efeae4), --mist (#efeae49e), --accent (#ff9dbf).
+   - Fonts: Shippori Mincho (headings), Zen Kaku Gothic New (body), Instrument Serif (accents).
+   - Maintain 60fps target and support prefers-reduced-motion.
+
+# COMMANDS
+- Test Suite: python3 -m unittest discover tests
+- Dev Server: pnpm dev
+- Type Check: pnpm tsc --noEmit
+- Lint Check: pnpm lint

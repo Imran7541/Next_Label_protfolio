@@ -1,0 +1,27 @@
+{
+  "name": "next-label-portfolio",
+  "version": "1.0.0",
+  "description": "Next Label Portfolio – High-end 3D WebGL agency showcase inspired by JUNKBRANDING (深海にも四季がある)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "python3 -m unittest discover tests"
+  },
+  "keywords": [
+    "portfolio",
+    "webgl",
+    "threejs",
+    "gpgpu",
+    "gsap",
+    "web-audio",
+    "creative-agency",
+    "zero-trust"
+  ],
+  "author": "Next Label / JUNKBRANDING",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
