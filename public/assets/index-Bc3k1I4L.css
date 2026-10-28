@@ -359,4 +359,115 @@ html[lang="bn"] .body{font-family:'Hind Siliguri','Kalpurush','SolaimanLipi','No
   }
 }
 
+/* ==========================================================================
+   HIGH-END HERO CTA & NARRATIVE CHAPTER NAVIGATION
+   ========================================================================== */
+.hero__cta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 26px;
+  pointer-events: auto;
+}
+.hero__cta .pill {
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  padding: 12px 22px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero__cta .pill--solid {
+  box-shadow: 0 0 20px rgba(127, 243, 255, 0.25);
+  border-color: #fff;
+}
+.hero__cta .pill--solid:hover {
+  box-shadow: 0 0 28px rgba(127, 243, 255, 0.6);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: var(--accent);
+}
+.hero__cta .pill:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+.pill__arrow {
+  margin-left: 2px;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero__cta .pill:hover .pill__arrow {
+  transform: translateX(4px);
+}
+.panel__advance {
+  margin-top: 14px;
+  display: inline-flex;
+  pointer-events: auto;
+}
+.panel__advance-link {
+  color: var(--accent);
+  font: 600 11.5px/1 var(--font-sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.panel__advance-link:hover, .panel__advance-link:focus-visible {
+  color: #fff;
+  border-bottom-color: var(--accent);
+  text-shadow: 0 0 10px rgba(127, 243, 255, 0.5);
+}
+.panel__advance-link svg {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.panel__advance-link:hover svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 760px), (aspect-ratio <= 9/10) {
+  /* Header Nav Frosted Glass Capsule on Mobile */
+  .masthead__nav {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    border-radius: 999px !important;
+    padding: 3px 10px !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    gap: clamp(8px, 2.5vw, 14px) !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4) !important;
+  }
+  .masthead__nav a {
+    padding: 4px 3px !important;
+    font-size: clamp(10px, 2.6vw, 11px) !important;
+    font-weight: 500 !important;
+  }
+  .masthead__nav a[aria-current] {
+    color: var(--accent) !important;
+    font-weight: 700 !important;
+  }
+  .hero__cta {
+    gap: 8px !important;
+    margin-top: 14px !important;
+    flex-wrap: wrap !important;
+  }
+  .hero__cta .pill {
+    padding: 9px 15px !important;
+    font-size: 10.5px !important;
+    letter-spacing: 0.08em !important;
+  }
+  .panel__advance {
+    margin-top: 10px !important;
+  }
+  .panel__advance-link {
+    font-size: 10px !important;
+    padding: 4px 0 !important;
+  }
+}
+
+
 

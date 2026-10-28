@@ -182,6 +182,12 @@
     - Bilingual Bengali typography: Scaled font size and line height so complex Bengali ligatures render smoothly without overflow.
   - Verified across mobile viewports (390x844, 360x740) in English and Bengali using Headless Chrome CDP automation (`scripts/capture_mobile_pages.mjs`, `scripts/capture_mobile_bn.mjs`).
   - Automated test suite 18/18 passing (`npm test`).
+- [x] Luxury-Grade Mobile Discovery & Narrative Chapter Navigation (Awwwards/FWA Standard):
+  - Integrated high-end Hero Call-to-Action pills (`[ Explore Profile → ]` / `[ আমার পরিচয় → ]` and `[ Selected Works ]` / `[ প্রজেক্ট সমূহ ]`) directly under the hero text in the natural mobile thumb zone.
+  - Re-architected mobile masthead navigation into a frosted-glass capsule pill (`[ About · Services · Works · Contact ]` / `[ পরিচিতি · সেবাসমূহ · প্রজেক্ট · যোগাযোগ ]`) with 14px backdrop-blur and 1px border.
+  - Added editorial chapter advance links (`Explore Services →` / `সেবাসমূহ দেখুন →`) with micro-animated SVG arrows in seasonal panels.
+  - Retained strict zero-emoji vector styling and ultra-refined typography, elevating the portfolio to elite market standards.
+  - Automated test suite 18/18 passing (`npm test`).
 
 ---
 

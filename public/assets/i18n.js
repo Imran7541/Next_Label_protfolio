@@ -82,14 +82,17 @@
       hero: {
         label: 'SOFTWARE & PRODUCT DEVELOPER',
         title: 'I Turn Ideas Into Digital Products.',
-        body: 'I build websites, mobile apps, and SaaS products that solve real-world business problems through thoughtful design and AI automation.'
+        body: 'I build websites, mobile apps, and SaaS products that solve real-world business problems through thoughtful design and AI automation.',
+        ctaAbout: 'Explore Profile',
+        ctaWorks: 'Selected Works'
       },
       about: {
         season: 'Spring',
         label: 'About',
         lede: 'More than code.<br />Digital products built<br />to solve real problems.',
         body: "I'm a software & product developer focused on building websites, mobile apps, and SaaS products that turn ideas into practical digital solutions. By combining thoughtful design, modern development, and AI automation, I create digital experiences that solve real-world business problems.",
-        note: 'Based in Bangladesh · Open to remote collaboration'
+        note: 'Based in Bangladesh · Open to remote collaboration',
+        advance: 'Explore Services'
       },
       services: {
         season: 'Summer',
@@ -184,14 +187,17 @@
       hero: {
         label: 'সফটওয়্যার ও প্রডাক্ট ডেভেলপার',
         title: 'আইডিয়াকে বাস্তবে রূপ দিই সফল ডিজিটাল প্রডাক্টে।',
-        body: 'আমি ওয়েবসাইট, মোবাইল অ্যাপ এবং SaaS প্রোডাক্ট তৈরি করি যা আধুনিক ডিজাইন এবং AI অটোমেশনের মাধ্যমে বাস্তব ব্যবসায়িক সমস্যার সমাধান করে।'
+        body: 'আমি ওয়েবসাইট, মোবাইল অ্যাপ এবং SaaS প্রোডাক্ট তৈরি করি যা আধুনিক ডিজাইন এবং AI অটোমেশনের মাধ্যমে বাস্তব ব্যবসায়িক সমস্যার সমাধান করে।',
+        ctaAbout: 'আমার পরিচয়',
+        ctaWorks: 'প্রজেক্ট সমূহ'
       },
       about: {
         season: 'বসন্ত',
         label: 'পরিচিতি',
         lede: 'শুধু কোড নয়।<br />বাস্তব সমস্যা সমাধানের জন্য তৈরি<br />ডিজিটাল প্রডাক্ট।',
         body: 'আমি একজন সফটওয়্যার ও প্রডাক্ট ডেভেলপার। ওয়েবসাইট, মোবাইল অ্যাপ এবং SaaS প্রডাক্টের মাধ্যমে আইডিয়াকে বাস্তবমুখী ডিজিটাল সল্যুশনে রূপান্তর করাই আমার লক্ষ্য। আকর্ষণীয় ডিজাইন, আধুনিক প্রযুক্তি এবং AI অটোমেশনের সমন্বয়ে আমি তৈরি করি সেরা ডিজিটাল অভিজ্ঞতা।',
-        note: 'বাংলাদেশভিত্তিক · রিমোট কোলাবোরেশনের জন্য উন্মুক্ত'
+        note: 'বাংলাদেশভিত্তিক · রিমোট কোলাবোরেশনের জন্য উন্মুক্ত',
+        advance: 'সেবাসমূহ দেখুন'
       },
       services: {
         season: 'গ্রীষ্ম',
@@ -341,6 +347,10 @@
     }
     const heroBody = document.querySelector('.panel--hero .body--hero');
     if (heroBody) heroBody.textContent = t.hero.body;
+    const heroCtaAbout = document.querySelector('[data-hero-cta="about"]');
+    if (heroCtaAbout) heroCtaAbout.textContent = t.hero.ctaAbout;
+    const heroCtaWorks = document.querySelector('[data-hero-cta="works"]');
+    if (heroCtaWorks) heroCtaWorks.textContent = t.hero.ctaWorks;
 
     // 6. About Section
     const aboutSeason = document.querySelector('#about .label__season');
@@ -357,6 +367,8 @@
     if (aboutBody) aboutBody.textContent = t.about.body;
     const aboutNote = document.querySelector('#about .note');
     if (aboutNote) aboutNote.textContent = t.about.note;
+    const aboutAdvance = document.querySelector('[data-advance="services"]');
+    if (aboutAdvance) aboutAdvance.textContent = t.about.advance;
 
     // 7. Services Section
     const servicesSeason = document.querySelector('#services .label__season');
