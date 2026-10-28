@@ -4,7 +4,9 @@
 - **Source Target**: `https://imranhossain.dev/`
 - **Output Directory**: `/home/emran/Documents/Next_Label_protfolio`
 - **GitHub Repository**: [https://github.com/Imran7541/Next_Label_protfolio](https://github.com/Imran7541/Next_Label_protfolio)
-- **Current Milestone**: Full extraction, architectural architecture, bilingual localization, automated test suite, and GitHub repository sync completed.
+- **Live Vercel Production**: [https://next-label-portfolio.vercel.app](https://next-label-portfolio.vercel.app)
+- **Vercel Project Dashboard**: [https://vercel.com/imrandt2001-7584s-projects/next-label-portfolio](https://vercel.com/imrandt2001-7584s-projects/next-label-portfolio)
+- **Current Milestone**: Full architecture, bilingual localization, automated test suite, GitHub repository sync, and Vercel production deployment completed.
 
 ---
 
