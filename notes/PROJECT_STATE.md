@@ -3,7 +3,8 @@
 ## 1. Project Overview
 - **Source Target**: `https://www.junkbranding.com/`
 - **Output Directory**: `/home/emran/Documents/Next_Label_protfolio`
-- **Current Milestone**: Full extraction, architectural reverse-engineering, asset preservation, and documentation completed.
+- **GitHub Repository**: [https://github.com/Imran7541/Next_Label_protfolio](https://github.com/Imran7541/Next_Label_protfolio)
+- **Current Milestone**: Full extraction, architectural reverse-engineering, bilingual localization, automated test suite, and GitHub repository sync completed.
 
 ---
 
