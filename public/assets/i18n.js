@@ -131,7 +131,8 @@
         messageLabel: 'Message',
         messagePlaceholder: 'Tell me about your project or business challenge.',
         submit: 'Send Message',
-        statusSuccess: 'Message sent successfully. Thank you for reaching out!'
+        statusSuccess: 'Message sent successfully. Thank you for reaching out!',
+        orConnect: 'Or connect directly:'
       },
       finale: {
         title: 'Explore My Work ',
@@ -236,7 +237,8 @@
         messageLabel: 'বার্তা',
         messagePlaceholder: 'আপনার প্রজেক্ট বা ব্যবসায়িক চ্যালেঞ্জ সম্পর্কে লিখুন।',
         submit: 'বার্তা পাঠান',
-        statusSuccess: 'বার্তা সফলভাবে পাঠানো হয়েছে। যোগাযোগ করার জন্য ধন্যবাদ!'
+        statusSuccess: 'বার্তা সফলভাবে পাঠানো হয়েছে। যোগাযোগ করার জন্য ধন্যবাদ!',
+        orConnect: 'সরাসরি যোগাযোগ ও সোশ্যাল মাধ্যম:'
       },
       finale: {
         title: 'আমার কাজসমূহ এক্সপ্লোর করুন ',
@@ -449,6 +451,9 @@
 
     const submitBtn = document.querySelector('[data-submit]');
     if (submitBtn) submitBtn.textContent = t.contact.submit;
+
+    const socialsLabel = document.querySelector('[data-contact-socials-label]');
+    if (socialsLabel) socialsLabel.textContent = t.contact.orConnect;
 
     // 10. Finale Section
     const finaleTitle = document.getElementById('owned-sites-title');

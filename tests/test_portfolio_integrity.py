@@ -91,5 +91,27 @@ class TestPortfolioIntegrity(unittest.TestCase):
             self.assertTrue(os.path.exists(full_path), f"Required file {rel_doc} must exist")
             self.assertGreater(os.path.getsize(full_path), 50, f"File {rel_doc} must not be empty")
 
+    def test_contact_social_channels_and_security(self):
+        """Verify that contact social channels exist, are secure, and have bilingual support."""
+        html_path = os.path.join(ROOT_DIR, "public/index.html")
+        with open(html_path, "r", encoding="utf-8") as f:
+            html = f.read()
+
+        self.assertIn('class="contact__socials"', html)
+        self.assertIn('href="https://github.com/Imran7541"', html)
+        self.assertIn('href="https://www.linkedin.com/in/imran-hosen/"', html)
+        self.assertIn('href="https://facebook.com/imranhosen.dev"', html)
+        self.assertIn('href="mailto:imrandt2001@gmail.com"', html)
+        self.assertIn('target="_blank"', html)
+        self.assertIn('rel="noopener noreferrer"', html)
+        self.assertIn('class="finale__socials"', html)
+
+        i18n_path = os.path.join(ROOT_DIR, "public/assets/i18n.js")
+        with open(i18n_path, "r", encoding="utf-8") as f:
+            i18n = f.read()
+
+        self.assertIn("orConnect:", i18n)
+        self.assertIn("সরাসরি যোগাযোগ ও সোশ্যাল মাধ্যম:", i18n)
+
 if __name__ == "__main__":
     unittest.main()

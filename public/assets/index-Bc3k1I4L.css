@@ -317,6 +317,21 @@ html[lang="bn"] .body{font-family:'Hind Siliguri','Kalpurush','SolaimanLipi','No
     padding: 9px 20px !important;
     font-size: 11.5px !important;
   }
+  .contact__socials {
+    margin-top: 8px !important;
+    gap: 5px !important;
+  }
+  .contact__socials-label {
+    font-size: 9.5px !important;
+  }
+  .contact__socials-list {
+    gap: 6px !important;
+  }
+  .contact__social-pill {
+    padding: 5px 11px !important;
+    font-size: 10.5px !important;
+    gap: 5px !important;
+  }
 
   /* 9. Loader & Light Dialog on Small Devices */
   .loader__count {
@@ -429,6 +444,113 @@ html[lang="bn"] .body{font-family:'Hind Siliguri','Kalpurush','SolaimanLipi','No
   transform: translateX(4px);
 }
 
+/* Contact Section Direct Channels & Social Cluster */
+.contact__socials {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.contact__socials-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mist);
+  opacity: 0.75;
+  margin: 0;
+}
+
+.contact__socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact__social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #efeae4c4;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: auto;
+  user-select: none;
+}
+
+.contact__social-pill:hover,
+.contact__social-pill:focus-visible {
+  background: rgba(127, 243, 255, 0.08);
+  border-color: rgba(127, 243, 255, 0.55);
+  color: #ffffff;
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 18px rgba(127, 243, 255, 0.18);
+  outline: none;
+}
+
+.contact__social-icon {
+  flex-shrink: 0;
+  color: currentColor;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.contact__social-pill:hover .contact__social-icon {
+  opacity: 1;
+  color: var(--accent);
+}
+
+.contact__social-arrow {
+  font-size: 10px;
+  color: rgba(127, 243, 255, 0.7);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact__social-pill:hover .contact__social-arrow {
+  transform: translate(2px, -2px);
+  color: var(--accent);
+}
+
+/* Finale Social Links */
+.finale__socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 18px 0 10px;
+  pointer-events: auto;
+}
+
+.finale__social-link {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  color: var(--mist);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.finale__social-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 @media (max-width: 760px), (aspect-ratio <= 9/10) {
   /* Header Nav Frosted Glass Capsule on Mobile */
   .masthead__nav {
@@ -466,6 +588,28 @@ html[lang="bn"] .body{font-family:'Hind Siliguri','Kalpurush','SolaimanLipi','No
   .panel__advance-link {
     font-size: 10px !important;
     padding: 4px 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__socials {
+    margin-top: 6px !important;
+    gap: 4px !important;
+  }
+  .contact__socials-list {
+    gap: 5px !important;
+  }
+  .contact__social-pill {
+    padding: 5px 9px !important;
+    font-size: 10px !important;
+    min-height: 32px !important;
+  }
+  .finale__socials {
+    gap: 12px !important;
+    margin: 12px 0 8px !important;
+  }
+  .finale__social-link {
+    font-size: 11px !important;
   }
 }
 
