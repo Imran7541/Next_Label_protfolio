@@ -20,12 +20,12 @@
       <span>GitHub</span>
       <span class="contact__social-arrow" aria-hidden="true">↗</span>
     </a>
-    <a href="https://www.linkedin.com/in/imran-hosen/" target="_blank" rel="noopener noreferrer" class="contact__social-pill" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/imran-fullstack" target="_blank" rel="noopener noreferrer" class="contact__social-pill" aria-label="LinkedIn">
       <svg class="contact__social-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">...</svg>
       <span>LinkedIn</span>
       <span class="contact__social-arrow" aria-hidden="true">↗</span>
     </a>
-    <a href="https://facebook.com/imranhosen.dev" target="_blank" rel="noopener noreferrer" class="contact__social-pill" aria-label="Facebook">
+    <a href="https://www.facebook.com/profile.php?id=61593363253913" target="_blank" rel="noopener noreferrer" class="contact__social-pill" aria-label="Facebook">
       <svg class="contact__social-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">...</svg>
       <span>Facebook</span>
       <span class="contact__social-arrow" aria-hidden="true">↗</span>

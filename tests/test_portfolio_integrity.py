@@ -99,8 +99,8 @@ class TestPortfolioIntegrity(unittest.TestCase):
 
         self.assertIn('class="contact__socials"', html)
         self.assertIn('href="https://github.com/Imran7541"', html)
-        self.assertIn('href="https://www.linkedin.com/in/imran-hosen/"', html)
-        self.assertIn('href="https://facebook.com/imranhosen.dev"', html)
+        self.assertIn('href="https://www.linkedin.com/in/imran-fullstack"', html)
+        self.assertIn('href="https://www.facebook.com/profile.php?id=61593363253913"', html)
         self.assertIn('href="mailto:imrandt2001@gmail.com"', html)
         self.assertIn('target="_blank"', html)
         self.assertIn('rel="noopener noreferrer"', html)
