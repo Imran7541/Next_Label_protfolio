@@ -113,5 +113,25 @@ class TestPortfolioIntegrity(unittest.TestCase):
         self.assertIn("orConnect:", i18n)
         self.assertIn("সরাসরি যোগাযোগ ও সোশ্যাল মাধ্যম:", i18n)
 
+    def test_cloudflare_pages_configuration(self):
+        """Verify that Cloudflare Pages headers, redirects, and edge functions exist."""
+        headers_path = os.path.join(ROOT_DIR, "public/_headers")
+        redirects_path = os.path.join(ROOT_DIR, "public/_redirects")
+        function_path = os.path.join(ROOT_DIR, "functions/api/contact.js")
+
+        self.assertTrue(os.path.exists(headers_path), "public/_headers must exist for Cloudflare")
+        self.assertTrue(os.path.exists(redirects_path), "public/_redirects must exist for Cloudflare")
+        self.assertTrue(os.path.exists(function_path), "functions/api/contact.js must exist for Cloudflare")
+
+        with open(headers_path, "r", encoding="utf-8") as f:
+            headers_content = f.read()
+        self.assertIn("Accept-Ranges: bytes", headers_content)
+        self.assertIn("Content-Security-Policy:", headers_content)
+
+        with open(function_path, "r", encoding="utf-8") as f:
+            fn_content = f.read()
+        self.assertIn("onRequestPost", fn_content)
+        self.assertIn("company_website", fn_content)
+
 if __name__ == "__main__":
     unittest.main()
